@@ -1,1 +1,9 @@
-<p>login works!</p>
+<section>
+  <form (submit)="onSubmit(inputName.value,inputPass.value)">
+      <label for="user"><b>Name:</b></label>
+      <input name="user" type="text" placeholder="Username" required #inputName/>
+      <label for="password"><b>Password</b></label>
+      <input name="password" type="password" placeholder="Password" required #inputPass/>
+      <button class="submit" type="submit">Login</button>
+  </form>
+</section>
